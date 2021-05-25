@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сайт для вивчення мови програмування JavaScript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/highlightAtomDark.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="headerLogo">
+        <span>Бібліотека мови прогамування JavaScript</span>
+    </div>
+    <div class="headerText">
+        <nav class="topNav">
+            <ul>
+                <li><a href="/javascript">JavaScript</a></li>
+                <li><a href="/node">Node.js</a></li>
+                <li><a href="/react">React.js</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <aside class="leftAside">
+        <div>
+            <img alt="JavaScript" src="img/img_js.jpg">
+        </div>
+        <div>
+            <h2>JavaScript</h2>
+        </div>
+        <div>
+            <h3><a href="#">Історія</a></h3>
+            <h3><a href="#">Введення</a></h3>
+            <h3><a href="#">Типи даних</a></h3>
+        </div>
+    </aside>
+
+    <section class="section">
+        <div class="section_text">
+            <h1>Вступ</h1>
+            <p>JavaScript – це повноцінна динамічна мова програмування, який застосовується до HTML документу, і може
+                забезпечити динамічну інтерактивність на веб-сайтах. Його розробив Brendan Eich, співзасновник проекту
+                Mozilla, Mozilla Foundation і Mozilla Corporation.</p>
+            <p>Роль клієнтського JavaScript:</p>
+            <ul>
+                <li>Створення візуальних ефектів (анімація).</li>
+                <li>Виконання нескладних обчислень.</li>
+                <li>Перевірка даних введених користувачем.</li>
+                <li>Маніпуляція даними введеними користувачем в форми.</li>
+                <li>Пошук за даними, вбудованим в завантажену сторінку.</li>
+                <li>Збереження даних в cookies.</li>
+                <li>Динамічна зміна вмісту сторінки (DHTML).</li>
+                <li>пряма взаємодія з сервером без перезавантаження всієї сторінки (AJAX).</li>
+            </ul>
+            <p>JavaScript є одною з найважливіших мов програмування на сьогоднішній день. Завдяки розвитку інтернету
+                JavaScript досяг висот, яких йому не обіцяли.</p>
+            <div class="hljs-container">
+<pre><code>    passport.use(new LocalStrategy({
+        usernameField: 'username',
+        passwordField: 'password'
+        },
+        function (username, password, done) {
+            let userAct = db.filter(user => user.username === username)[0];
+            if (typeof userAct === 'undefined') return done(null, false, {message: 'Невірне ім\'я користувача'});
+            if (userAct.password !== password) return done(null, false, {message: 'Невірний пароль'});
+            return done(null, userAct.username);
+    }));
+</code></pre>
+
+
+            </div>
+        </div>
+
+
+    </section>
+</main>
+
+<footer class="footer">
+
+</footer>
+
+
+<script src="js/highlight.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>
